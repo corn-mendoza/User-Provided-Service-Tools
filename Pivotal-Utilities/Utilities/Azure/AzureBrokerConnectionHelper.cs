@@ -43,7 +43,7 @@ namespace Pivotal.Utilities.Azure
         }
 
 
-        public string getConnectionStringForMessagingService(string serviceTypeName, string serviceInstanceName = "", IMessageBusConnectionStringFormatter formatter = null)
+        public string GetConnectionStringForMessagingService(string serviceTypeName, string serviceInstanceName = "", IMessageBusConnectionStringFormatter formatter = null)
         {
             string connectionString = null;
 
@@ -67,7 +67,7 @@ namespace Pivotal.Utilities.Azure
             return connectionString;
         }
 
-        public AzureSearchCredentials getAzureSearchCredentials(string serviceTypeName, string serviceInstanceName = "")
+        public AzureSearchCredentials GetAzureSearchCredentials(string serviceTypeName, string serviceInstanceName = "")
         {
             if (Object.ReferenceEquals(null, vcap_services_data) == false)
             {
@@ -95,7 +95,7 @@ namespace Pivotal.Utilities.Azure
         }
 
 
-        public AzureStorageCredentials getAzureStorageCredentials(string serviceTypeName, string serviceInstanceName = "")
+        public AzureStorageCredentials GetAzureStorageCredentials(string serviceTypeName, string serviceInstanceName = "")
         {
             if (Object.ReferenceEquals(null, vcap_services_data) == false)
             {
